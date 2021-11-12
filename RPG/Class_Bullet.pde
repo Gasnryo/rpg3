@@ -21,7 +21,11 @@ class Bullet extends GameObject {
     //noFill();
     //ellipse(loc.x, loc.y, size, size);
     //find out how to rotate
-    image(Bolt, loc.x, loc.y, 14, 42);
+    pushMatrix();
+    translate(loc.x, loc.y);
+    rotate(vel.heading()+PI/2);
+    image(Bolt, 0, 0, 14, 42);
+    popMatrix();
   }
   
   void act() {

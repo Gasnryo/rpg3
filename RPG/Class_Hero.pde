@@ -13,7 +13,7 @@ class Hero extends GameObject {
     roomY = 1;
     KnightSize = height/8;
     //myWeapon = new Weapon(15, 20);
-    myWeapon = new AutoPistol();
+    myWeapon = new Shotgun();
   }
 
   void show() { //display character
